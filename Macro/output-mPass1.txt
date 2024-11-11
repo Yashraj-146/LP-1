@@ -1,0 +1,28 @@
+Macro Name Table (MNT):
+Index  Name     #PP  #KP  MDT_P  KPTAB_P
+1       M1       2     2     1      1
+2       M2       2     2     6      3
+
+Macro Definition Table (MDT):
+1     MOVER  &A, &X
+2     ADD    &A, =’1’
+3     MOVER  &B, &Y
+4     ADD    &A, ='5'
+5     MEND
+6     MOVER  &U, &P
+7     MOVER  &V, &Q
+8     ADD    &U, =’15’
+9     ADD    &V, =’10’
+10    MEND
+
+Keyword Parameter Table (KPTAB):
+1     &A         AREG,
+2     &B         
+3     &U         CREG,
+4     &V         DREG
+
+Parameter Name Table (PNTAB):
+Macro: M1
+Params: &X,, &Y,, &A, &B
+Macro: M2
+Params: &P,, &Q,, &U, &V
